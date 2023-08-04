@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PinEntryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="@color/black"
+                android:text="Sign In To Continue"
+                android:textSize="20dp" />
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt"
+                android:layout_margin="18dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Remote Pin"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="2"
+                    />
+                <TextView
+                    android:id="@+id/forgot_pin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Pin"
+                    android:textSize="17dp"
+                    android:textColor="@color/blue"
+
+                    />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/pin"
+                android:layout_below="@id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_entry_shape"
+                android:layout_marginHorizontal="20dp"
+                android:hint="  "
+                android:padding="10dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pin"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/cancel_text_pin_entry_tologin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Cancel"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:id="@+id/confirm_text_pin_entry_log"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:layout_marginHorizontal="4dp"
+                    android:text="Confirm"
+                    android:textSize="18dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

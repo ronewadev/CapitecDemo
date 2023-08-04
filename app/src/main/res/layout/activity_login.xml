@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#78EAEAEA">
+
+    //this is the lead image of capitec
+
+    <ImageView
+        android:id="@+id/leadImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/lead_image" />
+
+    <TextView
+        android:id="@+id/displayed_User_First_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leadImage"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:text="Ronewa"
+        android:textSize="35dp" />
+
+
+
+    //in this part the user first name will be displayed
+
+
+    <GridLayout
+        android:id="@+id/loginGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/displayed_User_First_Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:columnCount="2">
+        //after entering correct pin this page will redirect to buying airtime activity
+
+        <LinearLayout
+            android:id="@+id/SignIn_To_BuyPrepaid"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape"
+            android:clickable="true"
+            android:onClick="buyPrepaidPressed"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/prepaid" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Buy prepaid mobile"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SignIn_To_BuyEectricty"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/electricity" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Buy Eectricty"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SignIn_To_PayBeneficiary"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+
+                android:src="@drawable/pay" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Pay Beneficiary"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SignIn_To_TransferMoney"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/transfer" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Transfer money"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SignIn_To_TrackMoney"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="4dp"
+                android:src="@drawable/track" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Track money"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SignIn_To_SendCash"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/send" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Send Cash"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginGrid"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="5dp"
+        android:onClick="SignIn"
+
+        android:text="Sign In"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:id="@+id/scan_To_Pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_circula"
+            android:src="@drawable/ic_baseline_qr_code_scanner_24"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan to pay"/>
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/pinEntryFragment"
+        android:visibility="gone"
+        android:name="com.example.capitecdemo.PinEntryFragment"
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
+        android:layout_height="250dp" />
+
+
+</RelativeLayout>
